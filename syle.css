@@ -1,45 +1,75 @@
-body > .nav-wrapper {  
+/* apply these styles to every element on the page  */
+* {
+  /* keep elements the same size when adding margin or padding */
+  box-sizing: border-box;
+
+  /* remove all the default margins and padding from every element */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* increase the size of the text*/
+  font-size: 1.5rem;
+}
+
+.nav-wrapper {
   display: flex;
   justify-content: space-between;
   height: 120px;
   background-color: #11122b;
   color: #cea125;
+
+  /* make it so the name and the links in the header line up vertically  */
+  align-items: center;
+
+  /* add space inside of the header so text isn't touching the edges of the screen  */
+  padding: 25px;
 }
 
-.left-navbar {
-    margin: 5px;
-    padding: 10px;
-}
-
-.right-navbar > .links-wrapper{
+.links-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 25px;
-  padding: 10px;
+
+  /* remove the bullet points from the list  */
+  list-style-type: none;
 }
 
-.right-navbar > .links-wrapper > .nav-link {
-    width: 70px;
-    text-align: center;
+.nav-link {
+  margin-left: 16px;
 }
 
-.links-wrapper > .nav-link a {
-    color: #cea125;
+.nav-link a {
+  color: #cea125;
+
+  /* remove the underline from the links  */
+  text-decoration: none;
+
+  /* make the underline fade-in in 0.2 seconds   */
+  transition: all 0.2s;
+  padding: 3px;
+}
+
+.nav-link a:hover {
+  /* create an underline under the links when they are hovered  */
+  color: #cea125;
+  border-bottom: 2px solid #cea125;
 }
 
 .welcome_section {
-    background-color: #cea125;
-    color: #11122b;
-    height: 550px;
-    padding: 25px;
+  background-color: #cea125;
+  color: #11122b;
+  height: 550px;
+  padding: 25px;
 }
 
 .welcome_section h1 {
-text-align: center;
+  text-align: center;
+  padding: 25px;
 }
 
 .footer {
-    text-align: center;
-    background-color: #11122b;
-    height: 35px;
+  text-align: center;
+  background-color: #11122b;
+  height: 35px;
 }
