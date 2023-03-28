@@ -1,0 +1,45 @@
+body > .nav-wrapper {  
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #11122b;
+  color: #cea125;
+}
+
+.left-navbar {
+    margin: 5px;
+    padding: 10px;
+}
+
+.right-navbar > .links-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  padding: 10px;
+}
+
+.right-navbar > .links-wrapper > .nav-link {
+    width: 70px;
+    text-align: center;
+}
+
+.links-wrapper > .nav-link a {
+    color: #cea125;
+}
+
+.welcome_section {
+    background-color: #cea125;
+    color: #11122b;
+    height: 550px;
+    padding: 25px;
+}
+
+.welcome_section h1 {
+text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: #11122b;
+    height: 35px;
+}
