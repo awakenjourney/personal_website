@@ -1,45 +1,87 @@
-body > .nav-wrapper {  
+body {
+  margin: 0;
+}
+
+body > .nav-header {
   display: flex;
   justify-content: space-between;
   height: 120px;
   background-color: #11122b;
-  color: #cea125;
+  color: #ffffff;
 }
 
 .left-navbar {
-    margin: 5px;
-    padding: 10px;
+  margin: 5px;
+  margin-left: 25px;
+  padding: 10px;
 }
 
-.right-navbar > .links-wrapper{
+.right-navbar > .links-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 25px;
+  margin-right: 35px;
   padding: 10px;
 }
 
 .right-navbar > .links-wrapper > .nav-link {
-    width: 70px;
-    text-align: center;
+  width: 120px;
+  text-align: center;
 }
 
 .links-wrapper > .nav-link a {
-    color: #cea125;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
-.welcome_section {
-    background-color: #cea125;
-    color: #11122b;
-    height: 550px;
-    padding: 25px;
+.links-wrapper > .nav-link a:hover {
+  color: #cea125;
+  letter-spacing: 2px;
+  transition: 0.5s;
 }
 
-.welcome_section h1 {
-text-align: center;
+.links-wrapper > .nav-link a.active {
+  border-bottom: 1px solid #cea125;
+}
+
+/* .links-wrapper > .nav-link a.active {
+    border-bottom: 1px solid #cea125;
+} */
+
+.page-container {
+  background-color: #cea125;
+  color: #11122b;
+  height: 550px;
+  padding: 25px;
+  align-items: center;
+}
+
+.page-container > .content-wrapper > .click-more a {
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.page-container > .content-wrapper > .click-more a:hover {
+    text-decoration: underline;
+}
+
+
+/* .page-container h1 {
+  text-align: center;
+} */
+
+.page-container > .content-wrapper {
+  width: 100vw;
+  height: 450px;
+}
+
+.page-container > .content-wrapper > span > p {
+    margin-right: 30px;
+  padding-right: 10px;
 }
 
 .footer {
-    text-align: center;
-    background-color: #11122b;
-    height: 35px;
+  text-align: center;
+  height: 40px;
 }
